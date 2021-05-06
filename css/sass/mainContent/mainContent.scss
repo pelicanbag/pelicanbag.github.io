@@ -1,2 +1,8 @@
+main {
+  width: 100%;
+  max-width: $large;
+  min-width: $small;
+}
+
 @import "./navigation.scss";
 @import "./products.scss";

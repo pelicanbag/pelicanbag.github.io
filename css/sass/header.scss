@@ -40,7 +40,12 @@ header {
 
     &_button:hover {
       cursor: pointer;
-      background-color: $button_hover;
+      background-color: $yellow;
+    }
+
+    &_button:focus-visible {
+      outline: auto;
+      border: 2px solid $yellow;
     }
   }
 }

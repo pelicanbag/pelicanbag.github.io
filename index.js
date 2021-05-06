@@ -1,4 +1,6 @@
 const startButton = document.querySelector(".header_background_button");
+const product = document.querySelectorAll(".product");
+
 
 startButton.onclick = () => {
     document.querySelector(".start-screen").classList.add("transition-hidden");

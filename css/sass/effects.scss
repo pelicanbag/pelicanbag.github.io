@@ -1,21 +1,36 @@
 .main-content {
-    opacity: 0;
-    visibility: hidden;
-  }
-  
-  .transition-hidden {
-    position: absolute;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 2s;
-  }
-  
-  .transition-appear {
-    opacity: 1;
-    visibility: visible;
-    transition: all 2s;
-  }
-  
-  .hidden {
-    display: none;
-  }
+  opacity: 0;
+  visibility: hidden;
+}
+
+.transition-hidden {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 2s;
+}
+
+.transition-appear {
+  opacity: 1;
+  visibility: visible;
+  transition: all 2s;
+}
+
+.hidden {
+  display: none;
+}
+
+.visually-hidden {
+  margin: -1px;
+
+  position: absolute;
+  width: 1px;
+  height: 1px;
+
+  border: 0;
+  padding: 0;
+
+  clip: rect(0 0 0 0);
+
+  overflow: hidden;
+}

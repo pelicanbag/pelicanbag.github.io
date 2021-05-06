@@ -21,7 +21,7 @@
     border: 2px solid $black;
 
     list-style: none;
-    
+
     li {
       padding: 10px 20px;
 
@@ -31,6 +31,18 @@
 
         color: $black;
       }
+
+      a:focus-visible {
+        padding: 8px 20px;
+        background-color: $grey;
+        border-radius: 5px;
+      }
+    }
+
+    li:hover {
+      background-color: $grey;
+
+      border-radius: 5px;
     }
   }
 }

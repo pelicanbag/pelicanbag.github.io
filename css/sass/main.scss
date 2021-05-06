@@ -2,5 +2,10 @@
 @import "./fonts.scss";
 @import "./effects.scss";
 
+body {
+  display: flex;
+  justify-content: center;
+}
+
 @import "./header.scss";
 @import "./mainContent/mainContent.scss";
