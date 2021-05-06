@@ -2,7 +2,11 @@ main {
   width: 100%;
   max-width: $large;
   min-width: $small;
+
+  position: relative;
 }
 
 @import "./navigation.scss";
 @import "./products.scss";
+
+@import "./modals.scss";

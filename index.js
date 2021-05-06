@@ -1,6 +1,8 @@
 const startButton = document.querySelector(".header_background_button");
-const product = document.querySelectorAll(".product");
+const products = document.querySelectorAll(".product");
+const pelicanBody = document.getElementById("pelican-shop");
 
+const modalFollow = document.querySelector(".modal--follow-on-instagram ");
 
 startButton.onclick = () => {
     document.querySelector(".start-screen").classList.add("transition-hidden");
@@ -11,4 +13,17 @@ startButton.onclick = () => {
     setTimeout(() => {
         document.querySelector(".start-screen").classList.add("hidden");
     }, 2000)
+}
+
+products.forEach((product) => {
+    product.onclick = () => {
+        pelicanBody.classList.add("stop-scrolling");
+        modalFollow.classList.remove("hidden")
+    }
+
+})
+
+document.querySelector(".fa-times-circle").onclick = () => {
+    pelicanBody.classList.remove("stop-scrolling");
+    modalFollow.classList.add("hidden");
 }
