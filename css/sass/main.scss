@@ -1,0 +1,17 @@
+@import "./constants.scss";
+@import "./fonts.scss";
+@import "./effects.scss";
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: $black;
+}
+
+@import "./header.scss";
+@import "./mainContent/mainContent.scss";

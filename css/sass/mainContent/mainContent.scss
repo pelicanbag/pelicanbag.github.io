@@ -1,0 +1,16 @@
+main {
+  width: 100%;
+  max-width: $large;
+  min-width: $small;
+
+  position: relative;
+}
+
+@import "./modals.scss";
+
+@import "./navigation.scss";
+@import "./products.scss";
+@import "./aboutUs.scss";
+@import "./shipping.scss";
+@import "./area.scss";
+@import "./footer.scss";

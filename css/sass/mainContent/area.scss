@@ -1,0 +1,36 @@
+.area {
+  max-width: $large;
+  min-width: $small;
+
+  margin-top: 40px;
+
+  &_heading {
+    margin-bottom: 20px;
+
+    text-align: center;
+  }
+
+  &_addresses {
+    margin: 0;
+    padding: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    width: 100%;
+    max-width: $large;
+    min-width: $small;
+
+    list-style: none;
+
+    a:hover {
+      text-decoration: none;
+
+      color: black;
+
+      font-weight: bold;
+      font-size: 18px;
+    }
+  }
+}

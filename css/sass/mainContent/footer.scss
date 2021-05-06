@@ -1,0 +1,28 @@
+.contact {
+  max-width: $large;
+  min-width: $small;
+
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+
+  margin-top: 40px;
+  padding-top: 10px;
+
+  border-top: 2px solid $black;
+
+  &_info {
+    color: hsla(0, 0%, 0%, 0.438);
+  }
+
+  &_social {
+    padding: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a:hover {
+      color: $yellow;
+    }
+  }
+}
