@@ -1,0 +1,36 @@
+.navigation {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+
+  display: flex;
+  justify-content: center;
+
+  ul {
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    width: 100%;
+    max-width: $large;
+    min-width: $small;
+
+    border: 2px solid $black;
+
+    list-style: none;
+    
+    li {
+      padding: 10px 20px;
+
+      a {
+        text-decoration: none;
+        text-transform: uppercase;
+
+        color: $black;
+      }
+    }
+  }
+}
