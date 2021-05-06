@@ -12,18 +12,25 @@ startButton.onclick = () => {
     })
     setTimeout(() => {
         document.querySelector(".start-screen").classList.add("hidden");
-    }, 2000)
-}
+    }, 2000);
+};
 
 products.forEach((product) => {
     product.onclick = () => {
         pelicanBody.classList.add("stop-scrolling");
-        modalFollow.classList.remove("hidden")
-    }
+        modalFollow.classList.remove("hidden");
+    };
 
-})
+});
 
-document.querySelector(".fa-times-circle").onclick = () => {
+const exitModal = () => {
     pelicanBody.classList.remove("stop-scrolling");
     modalFollow.classList.add("hidden");
+};
+
+document.querySelector(".modal_wrapper").onclick = (e) => {
+    e.stopPropagation();
 }
+
+document.querySelector(".fa-times-circle").onclick = exitModal;
+modalFollow.onclick = exitModal;
