@@ -53,6 +53,11 @@ body {
   justify-content: center;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -98,6 +103,52 @@ main {
   max-width: 1140px;
   min-width: 576px;
   position: relative;
+}
+
+.modal--follow-on-instagram {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.modal--follow-on-instagram .wrapper {
+  width: 33%;
+  min-width: 350px;
+  min-height: 150px;
+  position: fixed;
+  top: 33.5%;
+  left: 33.5%;
+  display: flex;
+  background-color: #a6a6a6;
+  border-radius: 10px;
+}
+.modal--follow-on-instagram .wrapper .fav--instagram {
+  min-width: 100px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal--follow-on-instagram .wrapper .fav--instagram .fa-instargam {
+  margin-bottom: 10px;
+}
+.modal--follow-on-instagram .wrapper .modal_info {
+  flex-grow: 2;
+  padding: 10px;
+}
+.modal--follow-on-instagram .wrapper .modal_info a {
+  font-weight: bold;
+}
+.modal--follow-on-instagram .wrapper .modal_info a:hover {
+  color: #f5e26a;
+}
+.modal--follow-on-instagram .wrapper .fa-times-circle {
+  font-weight: 20px;
+  margin: 10px;
+}
+.modal--follow-on-instagram .wrapper .fa-times-circle:hover {
+  cursor: pointer;
 }
 
 .navigation {
@@ -171,54 +222,20 @@ main {
   transition: width 1.5s;
 }
 
-.modal--follow-on-instagram {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1;
+.about-us {
+  margin-top: 40px;
 }
-.modal--follow-on-instagram .wrapper {
-  width: 33%;
-  min-width: 350px;
-  min-height: 150px;
-  position: fixed;
-  top: 33.5%;
-  left: 33.5%;
-  display: flex;
-  background-color: #a6a6a6;
-  border-radius: 10px;
+.about-us_heading {
+  margin-bottom: 20px;
+  text-align: center;
 }
-.modal--follow-on-instagram .wrapper a {
-  text-decoration: none;
-  color: black;
+.about-us p {
+  padding: 20px;
+  line-height: 33px;
+  border: 2px solid black;
 }
-.modal--follow-on-instagram .wrapper .fav--instagram {
-  min-width: 100px;
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.modal--follow-on-instagram .wrapper .fav--instagram .fa-instargam {
-  margin-bottom: 10px;
-}
-.modal--follow-on-instagram .wrapper .modal_info {
-  flex-grow: 2;
-  padding: 10px;
-}
-.modal--follow-on-instagram .wrapper .modal_info a {
+.about-us a:hover {
   font-weight: bold;
-}
-.modal--follow-on-instagram .wrapper .modal_info a:hover {
-  color: #f5e26a;
-}
-.modal--follow-on-instagram .wrapper .fa-times-circle {
-  font-weight: 20px;
-  margin: 10px;
-}
-.modal--follow-on-instagram .wrapper .fa-times-circle:hover {
-  cursor: pointer;
 }
 
 /*# sourceMappingURL=main.css.map */

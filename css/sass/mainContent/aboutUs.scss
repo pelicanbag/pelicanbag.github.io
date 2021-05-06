@@ -1,0 +1,21 @@
+.about-us {
+  margin-top: 40px;
+
+  &_heading {
+    margin-bottom: 20px;
+
+    text-align: center;
+  }
+
+  p {
+    padding: 20px;
+
+    line-height: 33px;
+
+    border: 2px solid $black;
+  }
+
+  a:hover {
+    font-weight: bold;
+  }
+}
