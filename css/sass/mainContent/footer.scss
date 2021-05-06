@@ -6,8 +6,9 @@
   grid-template-columns: 2fr 3fr;
 
   margin-top: 40px;
+  padding-top: 10px;
 
-  border: 2px solid $black;
+  border-top: 2px solid $black;
 
   &_info {
     color: hsla(0, 0%, 0%, 0.438);

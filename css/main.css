@@ -269,13 +269,41 @@ main {
   justify-items: center;
 }
 
+.area {
+  max-width: 1140px;
+  min-width: 576px;
+  margin-top: 40px;
+}
+.area_heading {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.area_addresses {
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1140px;
+  min-width: 576px;
+  list-style: none;
+}
+.area_addresses a:hover {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+}
+
 .contact {
   max-width: 1140px;
   min-width: 576px;
   display: grid;
   grid-template-columns: 2fr 3fr;
   margin-top: 40px;
-  border: 2px solid black;
+  padding-top: 10px;
+  border-top: 2px solid black;
 }
 .contact_info {
   color: rgba(0, 0, 0, 0.438);
