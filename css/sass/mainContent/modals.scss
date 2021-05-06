@@ -37,6 +37,11 @@
       }
     }
 
+    .fav--instagram:hover {
+      text-decoration: none;
+      color: $yellow;
+    }
+
     .modal_info {
       flex-grow: 2;
 

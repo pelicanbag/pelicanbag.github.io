@@ -50,7 +50,8 @@
 
 body {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 a {
@@ -133,6 +134,10 @@ main {
 .modal--follow-on-instagram .wrapper .fav--instagram .fa-instargam {
   margin-bottom: 10px;
 }
+.modal--follow-on-instagram .wrapper .fav--instagram:hover {
+  text-decoration: none;
+  color: #f5e26a;
+}
 .modal--follow-on-instagram .wrapper .modal_info {
   flex-grow: 2;
   padding: 10px;
@@ -157,6 +162,7 @@ main {
   top: 0;
   display: flex;
   justify-content: center;
+  background-color: rgba(255, 255, 255, 0.6);
 }
 .navigation ul {
   margin: 0;
@@ -236,6 +242,52 @@ main {
 }
 .about-us a:hover {
   font-weight: bold;
+}
+
+.shipping {
+  max-width: 1140px;
+  min-width: 576px;
+  margin-top: 40px;
+}
+.shipping_heading {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.shipping .wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 48%);
+  grid-auto-rows: 400px;
+  grid-gap: 4%;
+}
+.shipping .wrapper .shipping_method {
+  padding-top: 20px;
+  border: 2px solid black;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: 1fr;
+  grid-gap: 30px;
+  justify-items: center;
+}
+
+.contact {
+  max-width: 1140px;
+  min-width: 576px;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  margin-top: 40px;
+  border: 2px solid black;
+}
+.contact_info {
+  color: rgba(0, 0, 0, 0.438);
+}
+.contact_social {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact_social a:hover {
+  color: #f5e26a;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -54,7 +54,7 @@
           <div class="modal_info">
             <p>
               Вся актуальная и подробная информация о всех моделях указана в
-              нашем Instagram аккаунте. <br />
+              нашем <strong>Instagram</strong> аккаунте. <br />
               Давай будем друзьями!
             </p>
             <a href="https://www.instagram.com/pelican_bag/">Пойдем?</a>
@@ -72,13 +72,17 @@
           <li>
             <a href="#area" aria-label="где мы находимся">Где мы находимся</a>
           </li>
-          <li><a href="#contact-us" aria-label="Контакты">Контакты</a></li>
+          <li>
+            <a href="#contact-us" aria-label="Как с нами связаться"
+              >Как с нами связаться</a
+            >
+          </li>
         </ul>
       </nav>
 
       <section class="products">
-        <a name="products" class="visually-hidden"></a>
         <h3 class="products_head">Встречайте новую коллекцию</h3>
+        <a name="products" class="visually-hidden"></a>
         <div class="products_wrapper">
           <div class="product">
             <img
@@ -172,11 +176,13 @@
           </div>
         </div>
       </section>
+
       <section class="about-us">
+        <a name="about-us"></a>
         <article>
           <h3 class="about-us_heading">О нашей компании</h3>
+
           <p>
-            <a name="about-us"></a>
             <strong>Pelican Bag</strong> - сеть магазинов, в которых вы можете
             приобрести качественные аксессуары для создания любого образа,
             подчеркивающие индивидуальный и гармоничный стиль своего обладателя.
@@ -203,13 +209,47 @@
       </section>
 
       <section class="shipping">
+        <h3 class="shipping_heading">У нас есть доставка</h3>
         <a name="shipping" class="visually-hidden"></a>
-        
+        <div class="wrapper">
+          <div class="shipping_method">
+            <i class="fas fa-shipping-fast fa-10x"></i>
+            <h4>Почтовым курьером</h4>
+            <p>
+              Доставка осуществляется бесплатно в выбранное вами место. <br />
+              Минимальный заказ - <strong>от 150 руб.</strong>
+            </p>
+          </div>
+          <div class="shipping_method">
+            <i class="fas fa-dolly fa-10x"></i>
+            <h4>РУП "Белпочта"</h4>
+            <p>
+              Доставка осуществляется бесплатно в отделение почты. <br />
+              Минимальный заказ - <strong>от 80 руб.</strong>
+            </p>
+          </div>
+        </div>
       </section>
-      <section></section>
+
+      <section class="area"></section>
     </main>
 
-    <footer class="main-content hidden"></footer>
+    <footer class="main-content hidden contact">
+      <a name="contact-us" class="visually-hidden"></a>
+      <div class="contact_info">
+        <p>
+          ИП Киселев П.Н. УНП: 291269980. <br />
+          Свидетельство о государственной регистрации выдано Администрацией
+          Ленинского района г. Брест 28.05.2014 г. <br />
+          г. Брест, ул. Мицкевича, д. 6, кв. 28
+        </p>
+      </div>
+      <div class="contact_social">
+        <a href="https://www.instagram.com/pelican_bag/"
+          ><i class="fab fa-instagram-square fa-4x"></i
+        ></a>
+      </div>
+    </footer>
 
     <script src="./index.js"></script>
   </body>
